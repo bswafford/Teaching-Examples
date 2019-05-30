@@ -1,0 +1,16 @@
+#While vs. For Loops Example #1
+string="Hello World"
+
+#If I use a for loop:
+for letter in string:print(letter)
+#End
+
+
+#If I use a while loop:
+count=0
+while count<len(string):
+    print(string[count])
+    count+=1
+
+#Both scripts accomplish the same task,
+#but for is better in this situation.
