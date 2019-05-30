@@ -1,4 +1,6 @@
 #While vs. For Loops Example #2
+#Goal: Print string forever.
+
 string="Hello World"
 
 #If I use a for loop:
