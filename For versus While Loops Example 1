@@ -1,6 +1,6 @@
 #While vs. For Loops Example #1
-
 #Goal: Print each letter of the string
+
 string="Hello World"
 
 #If I use a for loop:
