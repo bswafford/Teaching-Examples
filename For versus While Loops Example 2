@@ -1,0 +1,17 @@
+#While vs. For Loops Example #2
+string="Hello World"
+
+#If I use a for loop:
+end=2
+for i in range(0,end):
+    print(string)
+    end+=1
+#End of program
+
+
+#If I use a while loop:
+while True:print(string)
+#End of program
+
+#Both scripts accomplish the same task,
+#but while is better in this situation.
