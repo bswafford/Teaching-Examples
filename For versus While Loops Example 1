@@ -1,5 +1,5 @@
 #While vs. For Loops Example #1
-#Goal: Print each letter of the string
+#Goal: Print each letter of the string once.
 
 string="Hello World"
 
