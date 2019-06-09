@@ -1,0 +1,55 @@
+#Example 1: Comparing variables inside and outside a function:
+x=2 #Set variable x to value of 2.
+
+#Defining the function:
+def myfunction():
+    x=3 #Set internal x to value of 3
+    
+myfunction() #Execute function (which does nothing, which accompishes nothing.
+
+'''
+Output will be 2 because x inside myfunction is an internal variable
+and cannot be accessed outside the function. Think of x outside the function
+as a completely separate variable from x inside the function.
+'''
+print(x) #Display value of external x.
+
+
+
+
+#Example 2: Using 'return' to pass an internal variable to an external variable:
+x=2 #Set variable x to value of 2.
+#Defining the function:
+def myfunction():
+    x=3 #Set internal x to value of 3
+    return x #Pass internal value of x to external variable when executed.
+x=myfunction() #Executing the function and passing its value to external x.
+
+'''
+Output will be 3 because x inside the myfunction is passed to x outside the
+function using the 'return' keyword. External x changes from 2 to 3.
+'''
+print(x) #Display value of external x.
+
+
+
+
+
+#Example 3: Using 'global' to change an external variable from inside a function:
+x=2 #Set variable x to value of 2.
+
+#Defining the function:
+def myfunction():
+    global x #Binds internal x to external x.
+    x=3 #Set variable x to value of 3.
+
+myfunction() #Execute function
+
+'''
+Output will be 3 because the 'global' keyword is used to bind x inside the
+function to x outside the function, and then the variable is changed inside the
+function. The internal and external x variables are now one variable, instead of
+two. Anything that happens to x inside the function will also happen on the
+outside.
+'''
+print(x) #Display value of external x.
