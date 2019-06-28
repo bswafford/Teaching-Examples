@@ -1,0 +1,15 @@
+#This example will allow the program to continue even if the user's answer is invalid:
+user_input=input("Please enter a number\n")
+try:
+    user_input=int(user_input)
+    print("You entered a number.")
+    
+except: print("You did not enter a number.")
+
+
+
+
+#This example will crash the program if the user's answer is invalid:
+user_input=input("Please enter a number\n")
+user_input=int(user_input)
+print("You entered a number.")
